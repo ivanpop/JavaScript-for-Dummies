@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>8zad</title>
+	
+	<script type="text/javascript">
+		var number = prompt("Enter a number between 0 and 999");
+		var hundreds = number / 100 | 0;
+		var ones;
+		var tensAndOnes;	
+		
+		if(number > 99) tensAndOnes = number % 100;				
+		else tensAndOnes = number * 1;
+		
+		ones = number % 10;		
+		
+		document.write("Number is " + number + "<br>");
+
+		switch(hundreds){			
+			case 1: document.write("One hundred "); break;
+			case 2: document.write("Two hundred "); break;
+			case 3: document.write("Three hundred "); break;
+			case 4: document.write("Four hundred "); break;
+			case 5: document.write("Five hundred "); break;
+			case 6: document.write("Six hundred "); break;
+			case 7: document.write("Seven hundred "); break;
+			case 8: document.write("Eight hundred "); break;
+			case 9: document.write("Nine hundred "); break;
+		}
+		
+		if(hundreds >= 1 && tensAndOnes >= 1) document.write("and ");
+		
+		switch(true){			
+			case 1: document.write("One"); break;
+			case 2: document.write("Two"); break;
+			case 3: document.write("Three"); break;
+			case 4: document.write("Four"); break;
+			case 5: document.write("Five"); break;
+			case 6: document.write("Six"); break;
+			case 7: document.write("Seven"); break;
+			case 8: document.write("Eight"); break;
+			case 9: document.write("Nine"); break;
+			case 10: document.write("Ten"); break;
+			case 11: document.write("Eleven"); break;
+			case 12: document.write("Twelve"); break;
+			case 13: document.write("Thirteen"); break;
+			case 14: document.write("Fourteen"); break;
+			case 15: document.write("Fifteen"); break;
+			case 16: document.write("Sixteen"); break;
+			case 17: document.write("Seventeen"); break;
+			case 18: document.write("Eighteen"); break;
+			case 19: document.write("Nineteen"); break;
+			case (tensAndOnes >= 20 && tensAndOnes < 30): document.write("Twenty"); break;
+			case (tensAndOnes >= 30 && tensAndOnes < 40): document.write("Thirty"); break;
+			case (tensAndOnes >= 40 && tensAndOnes < 50): document.write("Fourty"); break;
+			case (tensAndOnes >= 50 && tensAndOnes < 60): document.write("Fifty"); break;
+			case (tensAndOnes >= 60 && tensAndOnes < 70): document.write("Sixty"); break;
+			case (tensAndOnes >= 70 && tensAndOnes < 80): document.write("Seventy"); break;
+			case (tensAndOnes >= 80 && tensAndOnes < 90): document.write("Eighty"); break;
+			case (tensAndOnes >= 90 && tensAndOnes < 100): document.write("Ninety"); break;			
+		}	
+		
+		if(tensAndOnes > 20){
+			switch(ones){
+				case 1: document.write("-one"); break;
+				case 2: document.write("-two"); break;
+				case 3: document.write("-three"); break;
+				case 4: document.write("-four"); break;
+				case 5: document.write("-five"); break;
+				case 6: document.write("-six"); break;
+				case 7: document.write("-seven"); break;
+				case 8: document.write("-eight"); break;
+				case 9: document.write("-nine"); break;				
+			}
+		}	
+
+		if(number == 0) document.write ("Zero");
+	</script>	
+</head>
+
+<body>		
+</body>
