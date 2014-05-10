@@ -1,0 +1,40 @@
+<html>
+
+<head>
+	<title>7zad</title>
+	
+	<script type="text/javascript">
+		var arr = [1, 4, 7, 12, 18, 32, 46, 87, 126, 987, 1013];				
+		var left = 0;
+		var right = arr.length - 1;
+		var middle;
+		var count = 1;
+		var searchedInt = 0;
+		
+		document.write ("The array is made by<br>" + arr.join(", ") + ".<br><br>");
+		
+		searchedInt = prompt ("Enter the number you are looking for:");		
+
+			while(true){				
+                middle = (left + right) / 2 | 0;
+				
+				if (searchedInt > arr[middle]){
+					count++;
+					left = middle + 1;
+				}
+				
+				else if (searchedInt < arr[middle]){
+						count++;
+						right = middle - 1;
+					}
+					
+				else {
+					document.write("The index of " + searchedInt + " is " + middle + ".");
+					break;
+				}				
+			}					
+	</script>	
+</head>
+
+<body>		
+</body>
