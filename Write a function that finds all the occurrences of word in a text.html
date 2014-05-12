@@ -1,0 +1,55 @@
+<html>
+
+<head>
+	<title>3zad</title>
+	
+	<script type="text/javascript">
+		var someText = "A space elevator is a proposed type of space transportation system." + 
+						"<br> Its main component is a ribbon-like cable anchored to the surface and extending into space." +
+						"<br> It is designed to permit vehicle transport along the cable from a planetary surface, such as the " +
+						"Earth's, directly into space or orbit, without the use of large rockets." + 
+						"<br>An Earth-based space elevator would consist of a cable with one end attached to the surface near" +
+						"the equator and the other end in space beyond geostationary orbit (35,800 km altitude)." + 
+						"<br>The competing forces of gravity, which is stronger at the lower end, and the outward/upward " +
+						"centrifugal force, which is stronger at the upper end, would result in the cable being held up, " +
+						"under tension, and stationary over a single position on Earth." +
+						"<br>Once deployed, the tether would be ascended repeatedly by mechanical means to orbit, " + 
+						"and descended to return to the surface from orbit.";
+						
+		document.write("<i>" + someText + "</i><br><br>");
+		
+		var searchedWord = prompt("Enter the word, you're searching for.");		
+		
+		function searchText(someText, searchedWord, caseSensitive) {
+			var tempString = someText.replace(/\W+/g, ' ');			
+			var stringToWords = tempString.split(' ');			
+			var count = 0;
+			
+			switch (arguments.length){
+			
+				case 2 :
+					for (var i = 0; i < stringToWords.length; i++) {
+						if (stringToWords[i] === searchedWord) count++;
+					}
+					break;
+							
+				case 3 :
+					for (var i = 0; i < stringToWords.length; i++) {
+						if (stringToWords[i].toLowerCase() === searchedWord.toLowerCase()) count++;
+					}
+					break;
+			}
+		   
+			return count;
+		}
+		
+		var result1 = searchText (someText, searchedWord);
+		var result2 = searchText (someText, searchedWord, true);
+		
+		document.write ("In case sensitive '" + searchedWord + "' was found " + result1 + " times.<br>"); 
+		document.write ("In case insensitive '" + searchedWord + "' was found " + result2 + " times.");
+	</script>	
+</head>
+
+<body>		
+</body>
