@@ -1,0 +1,40 @@
+<html>
+
+<head>
+	<title>6zad</title>
+	
+	<script type="text/javascript">		
+		var arr = [9, 5, 3, 12, 45, 7, 98, 23, 56, 2, 7, 45, 1, 2, 8, 5, 65, 12, 14, 65, 27, 97, 888, 43, 66, 23, 5];
+		
+		document.write("The array contains:<br>" + arr.join(", ") + ".<br><br>");
+		
+		var searchedIndex = parseInt( prompt("Which index do you want to check?"));
+		
+		document.write("You entered " + searchedIndex + " and the number on that index is " + arr[searchedIndex] + ".<br>");
+		
+		function checkNeighbours (array, index){
+			var result = 0;
+			
+			if (index == array.length || index == 0) result = 1;
+			
+			else{
+				if (array[index] < array[index - 1] + array[index + 1]) result = 2;
+				else if (array[index] > array[index - 1] + array[index + 1]) result = 3;
+				else result = 4;
+			}
+			
+			switch (result){
+				case 0: document.write("Something went wrong."); break;
+				case 1: document.write("There is only one neighbour."); break;
+				case 2: document.write("The number is smaller than it's two neighbours."); break;
+				case 3: document.write("The number is bigger than it's two neighbours."); break;
+				case 4: document.write("The number is equal to it's two neighbours."); break;
+			}
+		}
+		
+		checkNeighbours (arr, searchedIndex);
+	</script>	
+</head>
+
+<body>		
+</body>
