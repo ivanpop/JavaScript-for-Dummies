@@ -18,7 +18,8 @@ Some assignments from The Telerik Academy on JS Fundamentals
   3.Coordinate system
   	
     This scripts demonstrates the use of objects.
-    There is a function for making points and lines.There are two more functions, one for calculating the distance between 	    two points and the other is for checking if three lines can make a triangle.
+    There is a function for making points and lines.There are two more functions, 
+    one for calculating the distance between two points and the other is for checking if three lines can make a triangle.
   
   
   
