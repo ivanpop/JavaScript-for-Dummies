@@ -1,0 +1,32 @@
+<html>
+
+<head>
+	<title>6zad</title>
+	
+	<script type="text/javascript">
+		var a = prompt("Input A:", "A can't be 0");
+		var b = prompt("Input B:");
+		var c = prompt("Input C:");
+		var d;
+		var x1;
+		var x2;
+
+		d = b * b - 4 * a * c;
+		
+		if(d < 0) document.write("D=" + d + "<br>There are no real roots");
+		
+		else if(d == 0){
+			x1 = (-b / 2 * a);
+			document.write("X=" + x1);
+		}
+		
+		else {
+			x1 = (-b + Math.sqrt(d)) / (2 * a);
+			x2 = (-b - Math.sqrt(d)) / (2 * a);
+			document.write("<br>X1=" + x1 + "<br>X2=" + x2);
+		}
+	</script>	
+</head>
+
+<body>		
+</body>
