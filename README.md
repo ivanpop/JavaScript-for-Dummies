@@ -15,7 +15,14 @@ Some assignments from The Telerik Academy on JS Fundamentals
   
  
   
-  3.Find words in text
+  3.Coordinate system
+  	
+    This scripts demonstrates the use of objects.
+    There is a function for making points and lines.There are two more functions, one for calculating the distance between 	    two points and the other is for checking if three lines can make a triangle.
+  
+  
+  
+  4.Find words in text
   
     The assignment was to find how many times a given word is found in a text and also there has to be a case-sensitive
     and a case-insensitive search.Also there must be function overloading or "fake overloading" since JS doesn't support
@@ -27,4 +34,6 @@ Some assignments from The Telerik Academy on JS Fundamentals
 
 
 
-  4.Quadratic equation
+  5.Quadratic equation
+  
+    Nothing to eplain.
