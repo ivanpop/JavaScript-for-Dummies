@@ -1,0 +1,65 @@
+<html>
+
+<head>
+	<title>3zad</title>
+	
+	<script type="text/javascript">
+		var arr = [1, 2, 10, 3];
+		
+        var line = { 
+			Point1: {
+				X: 0,
+				Y: 3 
+				}, 
+				
+			Point2: {
+			X: 5,
+			Y: 0
+			} 
+		};
+		
+		function deepCopy(obj) {
+			if (Object.prototype.toString.call(obj) === '[object Array]') {
+				var out = [], i = 0, len = obj.length;
+				for ( ; i < len; i++ ) {
+					out[i] = arguments.callee(obj[i]);
+				}
+				return out;
+			}
+			if (typeof obj === 'object') {
+				var out = {}, i;
+				for ( i in obj ) {
+					out[i] = arguments.callee(obj[i]);
+				}
+				return out;
+			}
+			return obj;
+		}
+		
+		function printObj(obj) {
+            for (i in obj) {
+                document.write(i + ": " + obj[i] + "<br>");
+                if (typeof (obj[i]) == 'object') {
+                    printObj(obj[i]);
+                }
+            }            
+        }
+		
+		document.write("<b>Originals</b><br><br>");
+		printObj(arr);
+		document.write("<br>");
+		printObj(line);
+		
+		document.write("<br><br><b>Bad copies</b><br><br>");
+		
+		var arrCopy = deepCopy(arr);
+		var lineCopy = deepCopy(line);
+		
+		printObj(arr);
+		document.write("<br>");
+		printObj(line);
+	</script>	
+</head>
+
+<body>		
+</body>
