@@ -23,7 +23,14 @@ Some assignments from The Telerik Academy on JS Fundamentals
   
   
   
-  4.Find words in text
+  4.Deep copy
+  
+    Write a function that makes a deep copy of an object.The function should work for both primitive and reference types.
+    Two functions are made.One for printing objects and the other is for deep copy.
+  
+  
+  
+  5.Find words in text
   
     The assignment was to find how many times a given word is found in a text and also there has to be a case-sensitive
     and a case-insensitive search.Also there must be function overloading or "fake overloading" since JS doesn't support
@@ -35,13 +42,13 @@ Some assignments from The Telerik Academy on JS Fundamentals
 
 
 
-  6.Neighbours
+  7.Neighbours
   
     The assignment is: Write a function that checks if the element at given position in given array of integers is bigger
     than its two neighbors (when such exist).
 
 
 
-  7.Quadratic equation
+ 8.Quadratic equation
   
-    Nothing to eplain.
+    Nothing to explain.
