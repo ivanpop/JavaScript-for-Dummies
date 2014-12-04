@@ -52,3 +52,8 @@ Some assignments from The Telerik Academy on JS Fundamentals
  8.Quadratic equation
   
     Nothing to explain.
+
+	
+	
+9.Coloring table
+	A simple function to color table lines with random colors.
