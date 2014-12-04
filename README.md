@@ -56,4 +56,4 @@ Some assignments from The Telerik Academy on JS Fundamentals
 	
 	
 9.Coloring table
-	A simple function to color table lines with random colors.
+    A simple function to color table lines with random colors.
